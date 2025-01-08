@@ -1,32 +1,66 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using api.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using api.Data;
+using api.Mappers; 
+using api.Dtos.Stock;
+
 
 namespace api.Controllers
 {
-    [Route("[controller]")]
-    public class StockController : Controller
+    [Route("api/stock")]
+    [ApiController]
+    public class StockController: ControllerBase
     {
-        private readonly ILogger<StockController> _logger;
+        private readonly ApplicationDBContext _context;
 
-        public StockController(ILogger<StockController> logger)
-        {
-            _logger = logger;
-        }
+        public StockController (ApplicationDBContext context)
+{
+    _context = context;
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+}
+[HttpGet]
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View("Error!");
-        }
+public IActionResult GetAll()
+{
+    var stocks = _context.Stocks.ToList()
+    .Select(s=>s.ToStockDto());
+    return Ok(stocks);
+}
+[HttpGet("{id}")]
+public IActionResult GetById([FromRoute] int id)
+{
+    var stock= _context.Stocks.Find(id);
+    if (stock ==null){
+
+        return NotFound();
+    }
+        return Ok(stock.ToStockDto());
+}
+
+
+
+[HttpPost]
+public IActionResult Create( [FromBody] CreateStockRequestDto stockDto)
+{
+    
+
+    if (!ModelState.IsValid)
+    {
+        return BadRequest(ModelState);
+    }
+    var StockModel= stockDto.ToStockFromCreateDTO();
+    _context.Stocks.Add(StockModel);
+    _context.SaveChanges();
+    return CreatedAtAction(nameof(GetById),new {id = StockModel.Id},StockModel.ToStockDto());
+
+}
+
     }
 }

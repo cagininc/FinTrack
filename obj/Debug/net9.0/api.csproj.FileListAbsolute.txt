@@ -155,3 +155,7 @@
 /Users/caginince/Desktop/FinTrack/api/obj/Debug/net9.0/api.pdb
 /Users/caginince/Desktop/FinTrack/api/obj/Debug/net9.0/api.genruntimeconfig.cache
 /Users/caginince/Desktop/FinTrack/api/obj/Debug/net9.0/ref/api.dll
+/Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
