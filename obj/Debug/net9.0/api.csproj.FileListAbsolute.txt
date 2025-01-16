@@ -9,6 +9,9 @@
 /Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Azure.Core.dll
 /Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Azure.Identity.dll
 /Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Humanizer.dll
+/Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 /Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Microsoft.AspNetCore.OpenApi.dll
 /Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Microsoft.Build.Locator.dll
@@ -39,6 +42,10 @@
 /Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Microsoft.Win32.SystemEvents.dll
 /Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Mono.TextTemplating.dll
 /Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Newtonsoft.Json.dll
+/Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Newtonsoft.Json.Bson.dll
+/Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/System.ClientModel.dll
 /Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/System.CodeDom.dll
 /Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/System.Composition.AttributedModel.dll
@@ -155,7 +162,3 @@
 /Users/caginince/Desktop/FinTrack/api/obj/Debug/net9.0/api.pdb
 /Users/caginince/Desktop/FinTrack/api/obj/Debug/net9.0/api.genruntimeconfig.cache
 /Users/caginince/Desktop/FinTrack/api/obj/Debug/net9.0/ref/api.dll
-/Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-/Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
-/Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
-/Users/caginince/Desktop/FinTrack/api/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
