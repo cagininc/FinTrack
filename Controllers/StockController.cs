@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using api.Data;
 using api.Mappers; 
 using api.Dtos.Stock;
-using api.Interfaces;
+using api.interfaces;
 using api.Repository;
  
 
@@ -37,7 +37,7 @@ public async Task  <IActionResult> GetAll()
     var stockDto= stocks.Select(s=>s.ToStockDto());
     return Ok(stockDto);
 }
-[HttpGet("{id}")]
+[HttpGet("{id:int}")]
 public async Task <IActionResult> GetById([FromRoute] int id)
 {
     var stock= await  _stockRepo.GetByIdAsync(id);
@@ -69,7 +69,7 @@ public async Task <IActionResult> GetById([FromRoute] int id)
 
 [HttpPut]
 
-[Route("{id}")]
+[Route("{id:int}")]
 public async Task <IActionResult> Update([FromRoute] int id,[FromBody] UpdateStockRequestDto updateDto)
 {
 
@@ -88,7 +88,7 @@ public async Task <IActionResult> Update([FromRoute] int id,[FromBody] UpdateSto
 
 }
 [HttpDelete]
-[Route("{id}")]
+[Route("{id:int}")]
 
 public async Task <ActionResult> Delete([FromRoute] int id)
 {

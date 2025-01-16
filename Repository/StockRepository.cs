@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using api.Data;
 using api.Models;
-using api.Interfaces;
+using api.interfaces;
 using Microsoft.EntityFrameworkCore;
 using api.Dtos.Stock;
 
@@ -49,18 +49,23 @@ namespace api.Repository
         }
          public async Task<List<Stock>> GetAllAsync()
          {
-         return await _context.Stocks.ToListAsync();
+         return await _context.Stocks.Include(c=>c.Comments).ToListAsync();
 
          }
 
          public async Task<Stock?> GetByIdAsync(int id)
          {
-            return await _context.Stocks.FindAsync(id);
+            return await _context.Stocks.Include(c=>c.Comments).FirstOrDefaultAsync(i=>i.Id==id);
 
 
          }
 
-         public async Task<Stock?>UpdateAsync(int id,UpdateStockRequestDto stockDto)
+        public Task<bool> StockExist(int id)
+        {
+            return _context.Stocks.AnyAsync(s=>s.Id==id);
+        }
+
+        public async Task<Stock?>UpdateAsync(int id,UpdateStockRequestDto stockDto)
          {
            var existingStock = await _context.Stocks.FirstOrDefaultAsync(x=>x.Id==id);
            if (existingStock==null)
