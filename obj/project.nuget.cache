@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gZen18e7Hgw=",
+  "dgSpecHash": "MQOkfPgdgk0=",
   "success": true,
   "projectFilePath": "/Users/caginince/Desktop/FinTrack/api/api.csproj",
   "expectedPackageFiles": [
@@ -51,12 +51,12 @@
     "/Users/caginince/.nuget/packages/microsoft.extensions.primitives/9.0.1/microsoft.extensions.primitives.9.0.1.nupkg.sha512",
     "/Users/caginince/.nuget/packages/microsoft.identity.client/4.61.3/microsoft.identity.client.4.61.3.nupkg.sha512",
     "/Users/caginince/.nuget/packages/microsoft.identity.client.extensions.msal/4.61.3/microsoft.identity.client.extensions.msal.4.61.3.nupkg.sha512",
-    "/Users/caginince/.nuget/packages/microsoft.identitymodel.abstractions/8.3.1/microsoft.identitymodel.abstractions.8.3.1.nupkg.sha512",
+    "/Users/caginince/.nuget/packages/microsoft.identitymodel.abstractions/8.0.1/microsoft.identitymodel.abstractions.8.0.1.nupkg.sha512",
     "/Users/caginince/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.0.1/microsoft.identitymodel.jsonwebtokens.8.0.1.nupkg.sha512",
-    "/Users/caginince/.nuget/packages/microsoft.identitymodel.logging/8.3.1/microsoft.identitymodel.logging.8.3.1.nupkg.sha512",
+    "/Users/caginince/.nuget/packages/microsoft.identitymodel.logging/8.0.1/microsoft.identitymodel.logging.8.0.1.nupkg.sha512",
     "/Users/caginince/.nuget/packages/microsoft.identitymodel.protocols/8.0.1/microsoft.identitymodel.protocols.8.0.1.nupkg.sha512",
     "/Users/caginince/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/8.0.1/microsoft.identitymodel.protocols.openidconnect.8.0.1.nupkg.sha512",
-    "/Users/caginince/.nuget/packages/microsoft.identitymodel.tokens/8.3.1/microsoft.identitymodel.tokens.8.3.1.nupkg.sha512",
+    "/Users/caginince/.nuget/packages/microsoft.identitymodel.tokens/8.0.1/microsoft.identitymodel.tokens.8.0.1.nupkg.sha512",
     "/Users/caginince/.nuget/packages/microsoft.netcore.app/2.0.7/microsoft.netcore.app.2.0.7.nupkg.sha512",
     "/Users/caginince/.nuget/packages/microsoft.netcore.dotnetapphost/2.0.7/microsoft.netcore.dotnetapphost.2.0.7.nupkg.sha512",
     "/Users/caginince/.nuget/packages/microsoft.netcore.dotnethostpolicy/2.0.7/microsoft.netcore.dotnethostpolicy.2.0.7.nupkg.sha512",

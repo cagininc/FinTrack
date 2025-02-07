@@ -8,7 +8,7 @@ namespace api.Dtos.Stock
 
 
 {
-   public class CreateStockRequestDto
+    public class CreateStockRequestDto
     {
         [Required]
         [MaxLength(10, ErrorMessage = "Symbol cannot be over 10 over characters")]
