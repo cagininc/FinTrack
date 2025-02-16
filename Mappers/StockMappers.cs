@@ -11,7 +11,7 @@ namespace api.Mappers
     {
         public static StockDto ToStockDto(this Stock stockModel)
         {
-            return new StockDto
+            return new  StockDto
             {
                 Id = stockModel.Id,
                 Symbol = stockModel.Symbol,
@@ -24,17 +24,34 @@ namespace api.Mappers
             };
         }
 
-        public static Stock ToStockFromCreateDTO(this CreateStockRequestDto stockDto)
+        public static Stock ToStockFromCreateDTO(this CreateStockRequestDto  fmpStock)
         {
             return new Stock
             {
-                Symbol = stockDto.Symbol,
-                CompanyName = stockDto.CompanyName,
-                Purchase = stockDto.Purchase,
-                LastDiv = stockDto.LastDiv,
-                Industry = stockDto.Industry,
-                MarketCap = stockDto.MarketCap
+                Symbol =  fmpStock.Symbol,
+                CompanyName =  fmpStock.CompanyName,
+                Purchase =  fmpStock.Purchase,
+                LastDiv =  fmpStock.LastDiv,
+                Industry =  fmpStock.Industry,
+                MarketCap =  fmpStock.MarketCap
             };
         }
+
+public static Stock ToStockFromFMP(this FMPStock fmpStock)
+        {
+            return new Stock
+            {
+                Symbol =  fmpStock.symbol,
+                CompanyName =  fmpStock.companyName,
+                Purchase =   (decimal)fmpStock.price,
+                LastDiv =  (decimal)fmpStock.lastDiv,
+                Industry =  fmpStock.industry,
+                MarketCap =  fmpStock.mktCap
+            };
+        }
+
+
+
+
     }
 }
