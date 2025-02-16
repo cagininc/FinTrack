@@ -42,7 +42,7 @@ namespace api.Repository
 
         public async Task<List<Stock>> GetAllAsync(QueryObject query)
         {
-            var stocks = _context.Stocks?.Include(c => c.Comments).AsQueryable();
+            var stocks = _context.Stocks?.Include(c => c.Comments).ThenInclude(a=>a.AppUser).AsQueryable();
 
             if (query == null)
             {
@@ -85,6 +85,11 @@ namespace api.Repository
             }
 
             return stock;
+        }
+
+        public async Task<Stock?> GetBySymbolAsync(string symbol)
+        {
+            return await _context.Stocks.FirstOrDefaultAsync(s=>s.Symbol==symbol);
         }
 
         public Task<bool> StockExist(int id)

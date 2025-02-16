@@ -22,6 +22,9 @@ public  DateTime CreatedOn{ get; set; }=DateTime.Now;
 public Stock? Stock { get; set; }
 //Navigation props
 
+public string AppUserId {get;set;}
+public AppUser AppUser {get;set;}
+
 
 
     }

@@ -4,12 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using api.Models;
 using api.Dtos.Comment;
+using api.helpers;
 
 namespace api.interfaces
 {
     public interface ICommentRepository
     {
-        Task<List<Comment>> GetAllAsync();
+        Task<List<Comment>> GetAllAsync(CommentQueryObject queryObject);
         Task<Comment?> GetByIdAsync(int id);
         Task<Comment> CreateAsync(Comment commentModel);
 

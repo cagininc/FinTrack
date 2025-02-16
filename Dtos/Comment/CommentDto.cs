@@ -17,5 +17,7 @@ namespace api.Dtos.Comment
 public  int? StockId{ get; set; }
 public  DateTime CreatedOn{ get; set; }=DateTime.Now;
 
+public string CreatedBy {get;set;} =string.Empty;
+
     }
 }
